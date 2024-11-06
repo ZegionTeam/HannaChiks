@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <style name="Theme.HannaChiks" parent="android:Theme.Material.Light.NoActionBar" />
+
+    <style name="Theme.HannaChiks.NoActionBar">
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+    </style>
+
+    <style name="Theme.HannaChiks.AppBarOverlay" parent="ThemeOverlay.AppCompat.Dark.ActionBar" />
+
+    <style name="Theme.HannaChiks.PopupOverlay" parent="ThemeOverlay.AppCompat.Light" />
+</resources>

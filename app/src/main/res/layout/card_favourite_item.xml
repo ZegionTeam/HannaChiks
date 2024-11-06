@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="90dp"
+    android:layout_height="wrap_content"
+    android:layout_margin="8dp"
+    app:cardCornerRadius="20dp">
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:padding="8dp">
+
+        <!-- Image at the top -->
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/itemImage"
+            android:layout_width="52dp"
+            android:layout_height="44dp"
+            android:src="@drawable/profile"
+            android:layout_alignParentTop="true"
+            android:layout_centerInParent="true"
+            android:scaleType="centerCrop"/>
+
+        <TextView
+            android:id="@+id/itemFavouriteName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/itemImage"
+            android:layout_marginTop="5dp"
+            android:text="Sate Ayam"
+            android:textSize="10sp"
+            android:textColor="@color/black"
+            android:fontFamily="@font/inder"
+            android:layout_centerHorizontal="true"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/itemSoldCount"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="11dp"
+            android:layout_below="@id/itemFavouriteName"
+            android:text="Sold"
+            android:textSize="8sp"
+            android:fontFamily="@font/inder"
+            android:layout_centerHorizontal="true"
+            android:textColor="#FFA500" />
+
+
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/itemSoldCountBadge"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@id/itemSoldCount"
+        android:layout_alignTop="@id/itemSoldCount"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="74dp"
+        android:layout_toEndOf="@id/itemSoldCount"
+        android:background="@drawable/wg_rounded_background"
+        android:fontFamily="@font/inder"
+        android:padding="4dp"
+        android:text="300x"
+        android:textColor="#FFA500"
+        android:textSize="10sp"
+        android:layout_gravity="end"/>
+
+
+</androidx.cardview.widget.CardView>
